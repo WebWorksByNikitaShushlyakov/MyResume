@@ -113,7 +113,7 @@ h4{
 }
 .hello_photo{
   position: relative;
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 .hello_photo div{
@@ -193,8 +193,8 @@ h4{
 }
 .button_contacts_mobile{
   position: fixed;
-  height: 120px;
-  width: 120px;
+  height: 70px;
+  width: 70px;
   background: var(--color-yelow) url('../img/contact.png');
   background-size: 50%;
   background-repeat: no-repeat;
@@ -212,11 +212,11 @@ h4{
 }
 .button_clouse{
   position: absolute;
-  right: 100px;
-  top: 100px;
+  right: 30px;
+  top: 30px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background: var(--color-yelow) url('../img/close.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -260,7 +260,7 @@ h4{
 .block1_body p{
   position: relative;
   padding-left: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .block1_body p:before{
