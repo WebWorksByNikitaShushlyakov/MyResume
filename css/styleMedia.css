@@ -131,6 +131,9 @@
     width: 70px;
     height: 70px;
   }
+  .hello_title{
+    text-align: center;
+  }
 }
 @media (max-width: 650px) {
   .block1_body p{

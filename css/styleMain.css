@@ -191,6 +191,24 @@ h4{
   font-size: 80px;
   color: var(--color-white);
   margin-bottom: 50px;
+  line-height: 24px;
+  opacity: 0;
+  transition-duration: 0.2s;
+}
+.contacts_mobile_Li li:nth-child(1){
+    transition-delay: 0.4s;
+}
+.contacts_mobile_Li li:nth-child(2){
+    transition-delay: 0.6s;
+}
+.contacts_mobile_Li li:nth-child(3){
+    transition-delay: 0.8s;
+}
+.contacts_mobile_Li li:nth-child(4){
+    transition-delay: 1s;
+}
+.contacts_mobile_Li li{
+  opacity: 1;
 }
 .button_contacts_mobile{
   position: fixed;
@@ -204,7 +222,7 @@ h4{
   top: 200px;
   z-index: 15;
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.3;
   transition-duration: 0.2s;
   display: none;
 }
@@ -289,8 +307,7 @@ h4{
 .block1_body2 span{
   display: block;
   color: #34324d;
-  opacity: 0.8;
-  font-family: cursive;
+  opacity: 0.6;
   padding-left: 30px;
   padding-bottom: 5px;
 }

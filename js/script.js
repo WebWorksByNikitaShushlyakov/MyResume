@@ -1,18 +1,22 @@
 const buttonMobilContact = document.querySelector('.button_contacts_mobile');
 const blockMobilContact = document.querySelector('.block_contacts_mobile');
 const buttonMobilClose = document.querySelector('.block_contacts_mobile');
+const contactsMobileBody = document.querySelector('.contacts_mobile_body');
 buttonMobilContact.addEventListener('click', function(){
   blockMobilContact.style.cssText = 'transform: translateX(0%);';
+  contactsMobileBody.classList.add('contacts_mobile_Li');
 })
 buttonMobilClose.addEventListener('click', function(){
   blockMobilContact.style.cssText = 'transform: translateX(-100%);';
+  contactsMobileBody.classList.remove('contacts_mobile_Li');
 })
 
 const mail2 = document.querySelector('#mail');
 const mail = document.querySelector('#mail2');
+const number = document.querySelector('#number');
 const copyList = document.querySelectorAll('#copy');
 const blockSave = document.querySelector('.block_save');
-copyList[0].onclick = function(){
+number.onclick = function(){
   navigator.clipboard.writeText('+7 (928) 014-05-32');
   blockSave.classList.add('save_active');
   setTimeout(function(){
@@ -21,6 +25,13 @@ copyList[0].onclick = function(){
 }
 copyList[1].onclick = function(){
   navigator.clipboard.writeText('amigo7772015@mail.ru');
+  blockSave.classList.add('save_active');
+  setTimeout(function(){
+    blockSave.classList.remove('save_active');
+  }, 1000);
+}
+copyList[0].onclick = function(){
+  navigator.clipboard.writeText('+7 (928) 014-05-32');
   blockSave.classList.add('save_active');
   setTimeout(function(){
     blockSave.classList.remove('save_active');
