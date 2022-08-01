@@ -2,18 +2,23 @@ const buttonMobilContact = document.querySelector('.button_contacts_mobile');
 const blockMobilContact = document.querySelector('.block_contacts_mobile');
 const buttonMobilClose = document.querySelector('.block_contacts_mobile');
 const contactsMobileBody = document.querySelector('.contacts_mobile_body');
+const body = document.querySelector('body');
 buttonMobilContact.addEventListener('click', function(){
   blockMobilContact.style.cssText = 'transform: translateX(0%);';
   contactsMobileBody.classList.add('contacts_mobile_Li');
+  body.style.cssText = `overflow: hidden;`;
 })
 buttonMobilClose.addEventListener('click', function(){
   blockMobilContact.style.cssText = 'transform: translateX(-100%);';
   contactsMobileBody.classList.remove('contacts_mobile_Li');
+  body.style.cssText = `overflow: auto;`;
 })
+
 
 const mail2 = document.querySelector('#mail');
 const mail = document.querySelector('#mail2');
 const number = document.querySelector('#number');
+const number2 = document.querySelector('#number2');
 const copyList = document.querySelectorAll('#copy');
 const blockSave = document.querySelector('.block_save');
 number.onclick = function(){
@@ -21,35 +26,42 @@ number.onclick = function(){
   blockSave.classList.add('save_active');
   setTimeout(function(){
     blockSave.classList.remove('save_active');
-  }, 1000);
+  }, 2000);
+}
+number2.onclick = function(){
+  navigator.clipboard.writeText('+7 (928) 014-05-32');
+  blockSave.classList.add('save_active');
+  setTimeout(function(){
+    blockSave.classList.remove('save_active');
+  }, 2000);
 }
 copyList[1].onclick = function(){
   navigator.clipboard.writeText('amigo7772015@mail.ru');
   blockSave.classList.add('save_active');
   setTimeout(function(){
     blockSave.classList.remove('save_active');
-  }, 1000);
+  }, 2000);
 }
 copyList[0].onclick = function(){
   navigator.clipboard.writeText('+7 (928) 014-05-32');
   blockSave.classList.add('save_active');
   setTimeout(function(){
     blockSave.classList.remove('save_active');
-  }, 1000);
+  }, 2000);
 }
 mail.onclick = function(){
   navigator.clipboard.writeText('amigo7772015@mail.ru');
   blockSave.classList.add('save_active');
   setTimeout(function(){
     blockSave.classList.remove('save_active');
-  }, 1000);
+  }, 2000);
 }
 mail2.onclick = function(){
   navigator.clipboard.writeText('amigo7772015@mail.ru');
   blockSave.classList.add('save_active');
   setTimeout(function(){
     blockSave.classList.remove('save_active');
-  }, 1000);
+  }, 2000);
 }
 
 const popUp = document.querySelector('#popUp');
