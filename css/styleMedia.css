@@ -30,9 +30,9 @@
     font-size: 22px;
   }
   .hello_button{
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
-    height: 70px;
+    height: 40px;
   }
   .popup_close{
     right: 20px;
@@ -45,6 +45,17 @@
   }
   .block_hello{
     padding: 20px;
+  }
+  .hello_photo{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .block_contacts_mobile{
+    padding: 20px;
+  }
+  .block1_body{
+    padding: 10px;
   }
 }
 
@@ -64,7 +75,9 @@
   }
   .block1_body p{
     font-size: 2vh;
-    line-height: 28px;
+    line-height: 20px;
+    padding-left: 35px;
+    margin-bottom: 15px;
   }
   .block1_body2 span{
     font-size: 2vh;
@@ -74,10 +87,6 @@
   .block1_body1,
   .block1_body2{
     width: 100%;
-  }
-  .block1_body p{
-    padding-left: 35px;
-    margin-bottom: 15px;
   }
   .block1_body h3{
     margin-top: 30px;
@@ -100,9 +109,6 @@
 }
 
 @media (max-width: 768px) {
-  .button_clouse{
-    right: 30px;
-  }
   .block1_body p{
     font-size: 1.6vh;
     line-height: 24px;
@@ -120,19 +126,19 @@
     font-size: 3vh;
   }
   .popup_close{
-    right: 20px;
-    top: 20px;
+    right: 5px;
+    top: 10px;
     width: 70px;
     height: 70px;
   }
 }
 @media (max-width: 650px) {
   .block1_body p{
-    font-size: 1.3vh;
-    line-height: 22px;
+    font-size: 2vh;
+    line-height: 18px;
   }
   .block1_body2 span{
-    font-size: 1.3vh;
+    font-size: 2vh;
     padding-left: 35px;
     padding-bottom: 15px;
   }
@@ -148,10 +154,10 @@
     padding-left: 0px;
   }
   .hello_title h1{
-    font-size: 36px;
+    font-size: 32px;
   }
   .hello_title h4{
-    font-size: 18px;
+    font-size: 16px;
   }
   .hello_title h2::before{
     width: 0px;
